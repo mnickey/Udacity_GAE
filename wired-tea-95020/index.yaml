@@ -14,3 +14,8 @@ indexes:
   properties:
   - name: city
   - name: name
+
+- kind: Conference
+  properties:
+  - name: seatsAvailable
+  - name: name

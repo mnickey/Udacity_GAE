@@ -444,16 +444,22 @@ class ConferenceApi(remote.Service):
         if confs:
             # If there are almost sold out conferences,
             # format announcement and set it in memcache
-            announcement = '%s %s' % (
-                'Last chance to attend! The following conferences '
-                'are nearly sold out:',
-                ', '.join(conf.name for conf in confs))
+            announcement = ANNOUNCEMENT_TPL % (', '.join(conf.name for conf in confs))
+            # announcement = '%s %s' % (
+            #     'Last chance to attend! The following conferences '
+            #     'are nearly sold out:',
+            #     ', '.join(conf.name for conf in confs))
+            print "The announcement has been created. Here: ", announcement
             memcache.set(MEMCACHE_ANNOUNCEMENTS_KEY, announcement)
+            print "The announcement has been set."
         else:
+            print "We are going to delete the announcement from memcache"
             # If there are no sold out conferences,
             # delete the memcache announcements entry
             announcement = ""
+            print "no announcement: ", announcement
             memcache.delete(MEMCACHE_ANNOUNCEMENTS_KEY)
+            print "The announcement has been deleted from memcache."
 
         return announcement
 

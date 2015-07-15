@@ -14,11 +14,7 @@ __author__ = 'wesc+api@google.com (Wesley Chun)'
 
 
 from datetime import datetime
-import json
-import os
-import time
-
-import endpoints
+import json, os, time, endpoints
 from protorpc import messages, message_types, remote
 
 from google.appengine.api import urlfetch, memcache, taskqueue
@@ -62,6 +58,17 @@ CONF_GET_REQUEST = endpoints.ResourceContainer(
 SESSION_GET_REQUEST = endpoints.ResourceContainer(
     message_types.VoidMessage,
     websafeConferenceKey = messages.StringField(1),
+)
+
+SESSION_TYPE = endpoints.ResourceContainer(
+    message_types.VoidMessage,
+    websafeConferenceKey=messages.StringField(1),
+    typeOfSession=messages.StringField(2),
+)
+
+SESSION_SPEAKER = endpoints.ResourceContainer(
+    message_types.VoidMessage,
+    speaker=messages.StringField(1),
 )
 
 EMAIL_SCOPE = endpoints.EMAIL_SCOPE
@@ -384,12 +391,24 @@ class ConferenceApi(remote.Service):
                       http_method='GET',
                       name='getConferenceSessions')
     def getConferenceSessions(self, request):
-        """ Given a conference, return all sessions """
+        """ Given a conference, return all sessions of a specified type (eg lecture, keynote, workshop) """
+        # get the conference key
         conf = ndb.Key(urlsafe=request.websafeConferenceKey).get()
+        # check the conference key
         if not conf:
             raise endpoints.NotFoundException("No conference found with that key. %s" % request.websafeConferenceKey)
+        # query the data store
         sessions = Session.query(ancestor=conf.key)
         return SessionForms(items=[self._copySessionToForm(session) for session in sessions])
+
+    @endpoints.method(SESSION_TYPE, SessionForms,
+                      path='conference/type/{websafeConferenceKey}',
+                      http_method='GET',
+                      name='getConferenceSessionsByType')
+    def getConferenceSessionsByType(self, request):
+        conf = ndb.Key(urlsafe=request.websafeConferenceKey).get()
+        sessions = Session.query(ancestor=conf.key).filter(Session.typeOfSession == request.typeOfSession)
+        return SessionForms(items=[self._copyConferenceToForm(session) for session in sessions])
 
     @endpoints.method(CONF_GET_REQUEST, BooleanMessage,
                       path='conference/{websafeConferenceKey}',

@@ -125,3 +125,30 @@ class ConflictException(endpoints.ServiceException):
 class StringMessage(messages.Message):
     """StringMessage-- outbound (single) string message"""
     data = messages.StringField(1, required=True)
+
+
+class Session(ndb.Model):
+    """Sessions model to record the sessions of a conference"""
+    name = ndb.StringProperty(required=True)
+    highlights = ndb.StringProperty()
+    speaker = ndb.StringProperty(required=True)
+    duration = ndb.StringProperty()
+    typeOfSession = ndb.StringProperty(required=True)
+    date = ndb.DateProperty()
+    startTime = ndb.TimeProperty()
+
+
+class SessionForm(messages.Message):
+    """ Conference Sessions inbound form """
+    name = messages.StringField(1)
+    highlights = messages.StringField(2)
+    speaker = messages.StringField(3)
+    duration = messages.IntegerField(4)
+    typeOfSession = messages.StringField(5)
+    date = messages.StringField(6)
+    startTime = messages.StringField(7)
+
+
+class SessionForms(messages.Message):
+    """ Multiple Session outbound form message """
+    items = messages.MessageField(SessionForm, 1, repeated=True)

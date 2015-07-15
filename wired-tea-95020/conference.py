@@ -19,33 +19,17 @@ import os
 import time
 
 import endpoints
-from protorpc import messages
-from protorpc import message_types
-from protorpc import remote
+from protorpc import messages, message_types, remote
 
-from google.appengine.api import urlfetch
+from google.appengine.api import urlfetch, memcache, taskqueue
 from google.appengine.ext import ndb
 
-from models import Profile
-from models import ProfileMiniForm
-from models import ProfileForm
-from models import TeeShirtSize
+from models import Profile, ProfileMiniForm, ProfileForm, TeeShirtSize, Conference, ConferenceForm
+from models import ConferenceForms, ConferenceQueryForm, ConferenceQueryForms, BooleanMessage
+from models import ConflictException, StringMessage, Session, SessionForm, SessionForms
 
 from settings import WEB_CLIENT_ID
 from utils import getUserId
-
-from models import Conference
-from models import ConferenceForm
-
-from models import ConferenceForms
-from models import ConferenceQueryForm
-from models import ConferenceQueryForms
-
-from models import BooleanMessage
-from models import ConflictException
-
-from google.appengine.api import memcache
-from models import StringMessage
 
 DEFAULTS = {
     "city": "Default City",
@@ -73,6 +57,11 @@ FIELDS = {
 CONF_GET_REQUEST = endpoints.ResourceContainer(
     message_types.VoidMessage,
     websafeConferenceKey=messages.StringField(1),
+)
+
+SESSION_GET_REQUEST = endpoints.ResourceContainer(
+    message_types.VoidMessage,
+    websafeConferenceKey = messages.StringField(1),
 )
 
 EMAIL_SCOPE = endpoints.EMAIL_SCOPE
@@ -145,9 +134,6 @@ class ConferenceApi(remote.Service):
         """Return user profile."""
         return self._doProfile()
 
-    # TODO 1
-    # 1. change request class
-    # 2. pass request to _doProfile function
     @endpoints.method(ProfileMiniForm, ProfileForm,
             path='profile', http_method='POST', name='saveProfile')
     def saveProfile(self, request):
@@ -235,6 +221,9 @@ class ConferenceApi(remote.Service):
 
         # create Conference & return (modified) ConferenceForm
         Conference(**data).put()
+        taskqueue.add(params={'email': user.email(),
+                      'conferenceInfo': repr(request)},
+                      url='/tasks/send_confirmation_email')
 
         return request
 
@@ -389,6 +378,18 @@ class ConferenceApi(remote.Service):
         prof.put()
         conf.put()
         return BooleanMessage(data=retval)
+
+    @endpoints.method(SESSION_GET_REQUEST, SessionForms,
+                      path='conference/{websafeConferenceKey}/sessions',
+                      http_method='GET',
+                      name='getConferenceSessions')
+    def getConferenceSessions(self, request):
+        """ Given a conference, return all sessions """
+        conf = ndb.Key(urlsafe=request.websafeConferenceKey).get()
+        if not conf:
+            raise endpoints.NotFoundException("No conference found with that key. %s" % request.websafeConferenceKey)
+        sessions = Session.query(ancestor=conf.key)
+        return SessionForms(items=[self._copySessionToForm(session) for session in sessions])
 
     @endpoints.method(CONF_GET_REQUEST, BooleanMessage,
                       path='conference/{websafeConferenceKey}',

@@ -556,6 +556,13 @@ class ConferenceApi(remote.Service):
         sessions = Session.query(Session.highlights == request.highlights)
         return SessionForms(items=[self._copySessionToForm(session) for session in sessions])
 
+# - - - Wishlist - - - - - - - - - - - - - - - - - - - -
+    @ndb.transactional(xg=True)
+    def _sessionWishlistAdd(self, request, reg=True):
+    """ Add or remove sessions from your wish list """
+        retval = None
+        prof = self._getProfileFromUser()
+
 # - - - Announcements - - - - - - - - - - - - - - - - - - - -
     @staticmethod
     def _cacheAnnouncement():

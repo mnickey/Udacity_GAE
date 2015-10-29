@@ -27,14 +27,14 @@
     <leaf>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wired-tea-95020/README.md">
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
               <folding />
             </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
           </provider>
         </entry>
       </file>
@@ -53,23 +53,20 @@
       <file leaf-file-name="conference.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wired-tea-95020/conference.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33277592">
-              <caret line="563" column="39" selection-start-line="563" selection-start-column="20" selection-end-line="563" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.6590214">
+              <caret line="621" column="0" selection-start-line="621" selection-start-column="0" selection-end-line="621" selection-end-column="0" />
               <folding>
                 <element signature="e#23#229#1" expanded="false" />
                 <element signature="e#282#311#0" expanded="true" />
-                <element signature="e#2952#3525#0" expanded="false" />
-                <element signature="e#3570#4366#0" expanded="false" />
-                <element signature="e#5195#5254#0" expanded="false" />
-                <element signature="e#5420#5525#0" expanded="false" />
-                <element signature="e#5797#6288#0" expanded="false" />
-                <element signature="e#6354#7045#0" expanded="false" />
-                <element signature="e#7103#9365#0" expanded="false" />
-                <element signature="e#9600#9681#0" expanded="false" />
-                <element signature="e#9929#10169#0" expanded="false" />
-                <element signature="e#10437#11143#0" expanded="false" />
-                <element signature="e#11395#11868#0" expanded="false" />
-                <element signature="e#11912#12626#0" expanded="false" />
+                <element signature="e#3206#3779#0" expanded="false" />
+                <element signature="e#3824#4620#0" expanded="false" />
+                <element signature="e#5449#5508#0" expanded="false" />
+                <element signature="e#5684#5789#0" expanded="false" />
+                <element signature="e#6081#6572#0" expanded="false" />
+                <element signature="e#6638#7329#0" expanded="false" />
+                <element signature="e#7387#9649#0" expanded="false" />
+                <element signature="e#9884#9965#0" expanded="false" />
+                <element signature="e#10213#10453#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -114,10 +111,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="798" />
-    <option name="y" value="23" />
-    <option name="width" value="1122" />
-    <option name="height" value="937" />
+    <option name="x" value="890" />
+    <option name="y" value="34" />
+    <option name="width" value="1017" />
+    <option name="height" value="912" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -130,7 +127,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -141,50 +138,13 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Udacity_GAE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Udacity_GAE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Udacity_GAE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Udacity_GAE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Udacity_GAE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wired-tea-95020" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/code/Bloggy" />
     <property name="FullScreen" value="false" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
@@ -418,15 +378,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="798" y="23" width="1122" height="937" extended-state="0" />
+    <frame x="890" y="34" width="1017" height="912" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2046285" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14105794" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19907407" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13804945" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -465,18 +425,15 @@
           <folding>
             <element signature="e#23#229#1" expanded="false" />
             <element signature="e#282#311#0" expanded="true" />
-            <element signature="e#2952#3525#0" expanded="false" />
-            <element signature="e#3570#4366#0" expanded="false" />
-            <element signature="e#5195#5254#0" expanded="false" />
-            <element signature="e#5420#5525#0" expanded="false" />
-            <element signature="e#5797#6288#0" expanded="false" />
-            <element signature="e#6354#7045#0" expanded="false" />
-            <element signature="e#7103#9365#0" expanded="false" />
-            <element signature="e#9600#9681#0" expanded="false" />
-            <element signature="e#9929#10169#0" expanded="false" />
-            <element signature="e#10437#11143#0" expanded="false" />
-            <element signature="e#11395#11868#0" expanded="false" />
-            <element signature="e#11912#12626#0" expanded="false" />
+            <element signature="e#3206#3779#0" expanded="false" />
+            <element signature="e#3824#4620#0" expanded="false" />
+            <element signature="e#5449#5508#0" expanded="false" />
+            <element signature="e#5684#5789#0" expanded="false" />
+            <element signature="e#6081#6572#0" expanded="false" />
+            <element signature="e#6638#7329#0" expanded="false" />
+            <element signature="e#7387#9649#0" expanded="false" />
+            <element signature="e#9884#9965#0" expanded="false" />
+            <element signature="e#10213#10453#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -503,14 +460,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wired-tea-95020/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wired-tea-95020/app.yaml">
@@ -537,18 +494,15 @@
           <folding>
             <element signature="e#23#229#1" expanded="false" />
             <element signature="e#282#311#0" expanded="true" />
-            <element signature="e#2952#3525#0" expanded="false" />
-            <element signature="e#3570#4366#0" expanded="false" />
-            <element signature="e#5195#5254#0" expanded="false" />
-            <element signature="e#5420#5525#0" expanded="false" />
-            <element signature="e#5797#6288#0" expanded="false" />
-            <element signature="e#6354#7045#0" expanded="false" />
-            <element signature="e#7103#9365#0" expanded="false" />
-            <element signature="e#9600#9681#0" expanded="false" />
-            <element signature="e#9929#10169#0" expanded="false" />
-            <element signature="e#10437#11143#0" expanded="false" />
-            <element signature="e#11395#11868#0" expanded="false" />
-            <element signature="e#11912#12626#0" expanded="false" />
+            <element signature="e#3206#3779#0" expanded="false" />
+            <element signature="e#3824#4620#0" expanded="false" />
+            <element signature="e#5449#5508#0" expanded="false" />
+            <element signature="e#5684#5789#0" expanded="false" />
+            <element signature="e#6081#6572#0" expanded="false" />
+            <element signature="e#6638#7329#0" expanded="false" />
+            <element signature="e#7387#9649#0" expanded="false" />
+            <element signature="e#9884#9965#0" expanded="false" />
+            <element signature="e#10213#10453#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -575,14 +529,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wired-tea-95020/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wired-tea-95020/app.yaml">
@@ -609,18 +563,15 @@
           <folding>
             <element signature="e#23#229#1" expanded="false" />
             <element signature="e#282#311#0" expanded="true" />
-            <element signature="e#2952#3525#0" expanded="false" />
-            <element signature="e#3570#4366#0" expanded="false" />
-            <element signature="e#5195#5254#0" expanded="false" />
-            <element signature="e#5420#5525#0" expanded="false" />
-            <element signature="e#5797#6288#0" expanded="false" />
-            <element signature="e#6354#7045#0" expanded="false" />
-            <element signature="e#7103#9365#0" expanded="false" />
-            <element signature="e#9600#9681#0" expanded="false" />
-            <element signature="e#9929#10169#0" expanded="false" />
-            <element signature="e#10437#11143#0" expanded="false" />
-            <element signature="e#11395#11868#0" expanded="false" />
-            <element signature="e#11912#12626#0" expanded="false" />
+            <element signature="e#3206#3779#0" expanded="false" />
+            <element signature="e#3824#4620#0" expanded="false" />
+            <element signature="e#5449#5508#0" expanded="false" />
+            <element signature="e#5684#5789#0" expanded="false" />
+            <element signature="e#6081#6572#0" expanded="false" />
+            <element signature="e#6638#7329#0" expanded="false" />
+            <element signature="e#7387#9649#0" expanded="false" />
+            <element signature="e#9884#9965#0" expanded="false" />
+            <element signature="e#10213#10453#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -647,14 +598,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wired-tea-95020/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wired-tea-95020/app.yaml">
@@ -681,18 +632,15 @@
           <folding>
             <element signature="e#23#229#1" expanded="false" />
             <element signature="e#282#311#0" expanded="true" />
-            <element signature="e#2952#3525#0" expanded="false" />
-            <element signature="e#3570#4366#0" expanded="false" />
-            <element signature="e#5195#5254#0" expanded="false" />
-            <element signature="e#5420#5525#0" expanded="false" />
-            <element signature="e#5797#6288#0" expanded="false" />
-            <element signature="e#6354#7045#0" expanded="false" />
-            <element signature="e#7103#9365#0" expanded="false" />
-            <element signature="e#9600#9681#0" expanded="false" />
-            <element signature="e#9929#10169#0" expanded="false" />
-            <element signature="e#10437#11143#0" expanded="false" />
-            <element signature="e#11395#11868#0" expanded="false" />
-            <element signature="e#11912#12626#0" expanded="false" />
+            <element signature="e#3206#3779#0" expanded="false" />
+            <element signature="e#3824#4620#0" expanded="false" />
+            <element signature="e#5449#5508#0" expanded="false" />
+            <element signature="e#5684#5789#0" expanded="false" />
+            <element signature="e#6081#6572#0" expanded="false" />
+            <element signature="e#6638#7329#0" expanded="false" />
+            <element signature="e#7387#9649#0" expanded="false" />
+            <element signature="e#9884#9965#0" expanded="false" />
+            <element signature="e#10213#10453#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -712,14 +660,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wired-tea-95020/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wired-tea-95020/app.yaml">
@@ -746,18 +694,15 @@
           <folding>
             <element signature="e#23#229#1" expanded="false" />
             <element signature="e#282#311#0" expanded="true" />
-            <element signature="e#2952#3525#0" expanded="false" />
-            <element signature="e#3570#4366#0" expanded="false" />
-            <element signature="e#5195#5254#0" expanded="false" />
-            <element signature="e#5420#5525#0" expanded="false" />
-            <element signature="e#5797#6288#0" expanded="false" />
-            <element signature="e#6354#7045#0" expanded="false" />
-            <element signature="e#7103#9365#0" expanded="false" />
-            <element signature="e#9600#9681#0" expanded="false" />
-            <element signature="e#9929#10169#0" expanded="false" />
-            <element signature="e#10437#11143#0" expanded="false" />
-            <element signature="e#11395#11868#0" expanded="false" />
-            <element signature="e#11912#12626#0" expanded="false" />
+            <element signature="e#3206#3779#0" expanded="false" />
+            <element signature="e#3824#4620#0" expanded="false" />
+            <element signature="e#5449#5508#0" expanded="false" />
+            <element signature="e#5684#5789#0" expanded="false" />
+            <element signature="e#6081#6572#0" expanded="false" />
+            <element signature="e#6638#7329#0" expanded="false" />
+            <element signature="e#7387#9649#0" expanded="false" />
+            <element signature="e#9884#9965#0" expanded="false" />
+            <element signature="e#10213#10453#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -784,14 +729,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wired-tea-95020/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wired-tea-95020/app.yaml">
@@ -818,18 +763,15 @@
           <folding>
             <element signature="e#23#229#1" expanded="false" />
             <element signature="e#282#311#0" expanded="true" />
-            <element signature="e#2952#3525#0" expanded="false" />
-            <element signature="e#3570#4366#0" expanded="false" />
-            <element signature="e#5195#5254#0" expanded="false" />
-            <element signature="e#5420#5525#0" expanded="false" />
-            <element signature="e#5797#6288#0" expanded="false" />
-            <element signature="e#6354#7045#0" expanded="false" />
-            <element signature="e#7103#9365#0" expanded="false" />
-            <element signature="e#9600#9681#0" expanded="false" />
-            <element signature="e#9929#10169#0" expanded="false" />
-            <element signature="e#10437#11143#0" expanded="false" />
-            <element signature="e#11395#11868#0" expanded="false" />
-            <element signature="e#11912#12626#0" expanded="false" />
+            <element signature="e#3206#3779#0" expanded="false" />
+            <element signature="e#3824#4620#0" expanded="false" />
+            <element signature="e#5449#5508#0" expanded="false" />
+            <element signature="e#5684#5789#0" expanded="false" />
+            <element signature="e#6081#6572#0" expanded="false" />
+            <element signature="e#6638#7329#0" expanded="false" />
+            <element signature="e#7387#9649#0" expanded="false" />
+            <element signature="e#9884#9965#0" expanded="false" />
+            <element signature="e#10213#10453#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -891,14 +833,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wired-tea-95020/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wired-tea-95020/static/js/controllers.js">
@@ -948,23 +890,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wired-tea-95020/conference.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33277592">
-          <caret line="563" column="39" selection-start-line="563" selection-start-column="20" selection-end-line="563" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.6590214">
+          <caret line="621" column="0" selection-start-line="621" selection-start-column="0" selection-end-line="621" selection-end-column="0" />
           <folding>
             <element signature="e#23#229#1" expanded="false" />
             <element signature="e#282#311#0" expanded="true" />
-            <element signature="e#2952#3525#0" expanded="false" />
-            <element signature="e#3570#4366#0" expanded="false" />
-            <element signature="e#5195#5254#0" expanded="false" />
-            <element signature="e#5420#5525#0" expanded="false" />
-            <element signature="e#5797#6288#0" expanded="false" />
-            <element signature="e#6354#7045#0" expanded="false" />
-            <element signature="e#7103#9365#0" expanded="false" />
-            <element signature="e#9600#9681#0" expanded="false" />
-            <element signature="e#9929#10169#0" expanded="false" />
-            <element signature="e#10437#11143#0" expanded="false" />
-            <element signature="e#11395#11868#0" expanded="false" />
-            <element signature="e#11912#12626#0" expanded="false" />
+            <element signature="e#3206#3779#0" expanded="false" />
+            <element signature="e#3824#4620#0" expanded="false" />
+            <element signature="e#5449#5508#0" expanded="false" />
+            <element signature="e#5684#5789#0" expanded="false" />
+            <element signature="e#6081#6572#0" expanded="false" />
+            <element signature="e#6638#7329#0" expanded="false" />
+            <element signature="e#7387#9649#0" expanded="false" />
+            <element signature="e#9884#9965#0" expanded="false" />
+            <element signature="e#10213#10453#0" expanded="false" />
           </folding>
         </state>
       </provider>
